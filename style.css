@@ -1,0 +1,66 @@
+h1 {
+    white-space: nowrap;
+    font-family:'Arial Black', sans-serif;
+    font-size: 40px;
+}
+
+body {
+    background: linear-gradient(-45deg, blue, teal, purple, pink);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+section {display: none;}
+section :target {display: block;}
+#Games:target {display: block;}
+#Movies:target {display: block;}
+#Anime:target {display: block;}
+#Manga-manhwa:target {display: block;}
+
+.fav-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    width: 500px;
+    height: 80px;
+    line-height: 80px;
+    margin: 5px;
+    background: linear-gradient(45deg,pink,purple);
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.fav-button:hover {
+    background-color: #c3107b;
+}
+
+.back-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    display: block;
+    text-align:center;
+    width: 300px;
+    height: 70px;
+    line-height:70px;
+    margin: 5px;
+    background: linear-gradient(45deg, pink, purple);
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+}
+
+.back-btn:hover {
+    background-color: #c3107b;
+}   
